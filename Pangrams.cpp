@@ -1,3 +1,5 @@
+// link problem: https://www.hackerrank.com/challenges/pangrams/problem
+
 #include <bits/stdc++.h>
 using namespace std;
 
