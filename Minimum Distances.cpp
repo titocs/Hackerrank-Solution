@@ -14,8 +14,7 @@ int main(){
     for(int i=0; i<n; ++i){
         for(int j=i+1; j<n; ++j){
             if(arr[i] == arr[j]){
-                int temp = abs(i-j);
-                result.push_back(temp);
+                result.push_back(abs(i-j));
                 count++;
             }
         }
@@ -24,4 +23,3 @@ int main(){
         cout << "-1";
     else
         cout << *min_element(result.begin(), result.end());
-}
