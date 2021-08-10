@@ -16,9 +16,6 @@ int main(){
                 count++;
             }
         }
-        if(count >= 10)
-            cout << "YES" << endl;
-        else
-            cout << "NO" << endl;     
+        cout << (count >= 10 ? "YES" : "NO") << endl;  
     }
 }
