@@ -7,13 +7,12 @@ int main(){
     int n; cin >> n;
     char letter[26] = {0};
     int count = 0;
-    for(int i=0; i<n; ++i) {
+    for(int i=0; i<n; ++i){
         string s; cin >> s;
         for(int j=0; j<s.length(); ++j){
-            char c = s[j];
-            if(letter[c-'a'] == i) {
-                letter[c-'a']++;
-                if(letter[c-'a'] == n) {
+            if(letter[s[j] - 'a'] == i){
+                letter[s[j] - 'a']++;
+                if(letter[s[j] - 'a'] == n){
                     count++;
                 }                    
             }
