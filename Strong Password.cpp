@@ -17,10 +17,8 @@ int main(){
         else
             spec = 1;
     }
-    if(n + (4 - (num + low + upper + spec)) < 6){
+    if(n + (4 - (num + low + upper + spec)) < 6)
         cout << 6 - n;
-    }
-    else{
+    else
         cout << 4 - (num + low + upper + spec);
-    }
 }
