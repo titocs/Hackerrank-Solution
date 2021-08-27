@@ -8,15 +8,15 @@ int main(){
 	string s; getline(cin,s);
 	for(int i=0; i<s.length(); i++) {
 		if(s[i] == ' ')
-            continue;
+			continue;
 		if('A' <= s[i] && s[i] <= 'Z')
 			c[s[i] - 'A']++;
-        else
+		else
 			c[s[i] - 'a']++;
 	}
 	for(int i=0; i<26; i++) {
 		if(c[i] == 0) {
-		    cout << "not pangram" << endl;
+			cout << "not pangram" << endl;
 			return 0;
 		}
 	}
