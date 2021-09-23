@@ -1,4 +1,4 @@
-// Link problem: 
+// Link problem: https://www.hackerrank.com/challenges/bon-appetit/problem
 
 #include <bits/stdc++.h>
 using namespace std;
