@@ -17,8 +17,8 @@ int main(){
         string temp = s;
         reverseStr(temp);
         for(int i=0; i<s.length()-1; ++i){
-                tampung1.push_back(abs(int(s[i]) - int(s[i+1])));
-                tampung2.push_back(abs(int(temp[i]) - int(temp[i+1])));
+            tampung1.push_back(abs(int(s[i]) - int(s[i+1])));
+            tampung2.push_back(abs(int(temp[i]) - int(temp[i+1])));
         }
         if(tampung1 == tampung2)
             cout << "Funny" << endl;
