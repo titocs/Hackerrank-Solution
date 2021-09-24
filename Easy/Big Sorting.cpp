@@ -8,7 +8,6 @@ bool check(string i, string j){
     int m = j.length();
     if(n == m)
         return (i < j);
-    
     return n < m;
 }
 
