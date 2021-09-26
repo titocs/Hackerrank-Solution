@@ -1,4 +1,4 @@
-// Link problem: 
+// Link problem: https://www.hackerrank.com/challenges/icecream-parlor/problem?h_r=internal-search
 
 #include <bits/stdc++.h>
 using namespace std;
