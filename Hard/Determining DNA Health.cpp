@@ -41,11 +41,11 @@ int main(){
         
         trie* ct = &t;
         for(int j=0; j<s.size(); ++j) {
-            if(ct->d.find(s[j]) == ct->d.end())
-                ct->d[s[j]] = new trie();
-            ct = ct->d[s[j]];
+            if(ct -> d.find(s[j]) == ct->d.end())
+                ct -> d[s[j]] = new trie();
+            ct = ct -> d[s[j]];
         }
-        ct->m.push_back(make_pair(i, h[i]));
+        ct -> m.push_back(make_pair(i, h[i]));
     }
     long long min = -1, max = -1;
     int k; cin >> k;
