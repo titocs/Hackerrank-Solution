@@ -11,7 +11,7 @@ class trie{
             for(auto& it : m)
                 cout << s << ": " << it.first << " " << it.second << endl;
             for(auto& it : d)
-                it.second->display(s + it.first);
+                it.second -> display(s + it.first);
         }
     
         long long get_score(const std::string& s, int i, int min, int max){
@@ -20,7 +20,7 @@ class trie{
                 if(it.first >= min && it.first <= max)
                     r + =it.second;
             if(i < s.size() && d.find(s[i]) != d.end())
-                r += d[s[i]]->get_score(s, i+1, min, max);
+                r += d[s[i]] -> get_score(s, i+1, min, max);
             return r;
         }
 };
