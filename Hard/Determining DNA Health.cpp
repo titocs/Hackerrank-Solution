@@ -18,7 +18,7 @@ class trie{
             long long r = 0;
             for(auto& it : m)
                 if(it.first >= min && it.first <= max)
-                    r + =it.second;
+                    r += it.second;
             if(i < s.size() && d.find(s[i]) != d.end())
                 r += d[s[i]] -> get_score(s, i+1, min, max);
             return r;
