@@ -38,7 +38,6 @@ int main(){
     trie t;
     for(int i=0; i<n; ++i) {
         string s = g[i];
-        
         trie* ct = &t;
         for(int j=0; j<s.size(); ++j) {
             if(ct -> d.find(s[j]) == ct->d.end())
