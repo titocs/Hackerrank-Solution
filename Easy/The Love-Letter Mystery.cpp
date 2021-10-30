@@ -9,8 +9,7 @@ int main(){
     int tt; cin >> tt;
     while(tt--){
         int count = 0;
-        string s;
-        cin >> s;
+        string s; cin >> s;
         if(s.length() % 2 == 0){
             int temp = s.length()/2 - 1;
             for(int i=s.length()/2; i<s.length(); ++i){
